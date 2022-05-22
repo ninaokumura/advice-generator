@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { CubeSpinner } from 'react-spinners-kit';
 
 import AdviceCard from './component/AdviceCard';
 
@@ -24,16 +23,14 @@ function App() {
   useEffect(fetchRandomAdvice, []);
 
   return (
-    <div className='w-full font-mono'>
-      <main className='bg-dark-blue h-screen grid place-items-center p-4'>
-        <AdviceCard
-          advice={advice.advice}
-          id={advice.id}
-          onDiceClick={handleDiceClick}
-          loading={loading}
-        />
-      </main>
-    </div>
+    <main className='bg-dark-blue w-full font-mono h-screen grid place-items-center p-4'>
+      <AdviceCard
+        advice={advice.advice}
+        id={advice.id}
+        onDiceClick={handleDiceClick}
+        loading={loading}
+      />
+    </main>
   );
 }
 

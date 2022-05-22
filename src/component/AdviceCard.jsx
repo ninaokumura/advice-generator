@@ -6,7 +6,7 @@ import DividerMobile from '../images/pattern-divider-mobile.svg?component';
 
 export default function AdviceCard(props) {
   return (
-    <div className='max-w-[30rem] text-center text-white pb-16 rounded-xl bg-dark-grayish-blue relative shadow-xl w-full grid gap-4'>
+    <div className='max-w-[30rem] text-center text-white pb-16 rounded-xl bg-dark-grayish-blue relative shadow-xl w-full grid gap-4 -mt-12 sm:-mt-16'>
       <div className='p-4 min-h-[70%]'>
         <div className='p-5 text-neon-green'>ADVICE #{props.id}</div>
         <div className='font-[800] text-2xl grid place-items-center'>
