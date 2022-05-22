@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import AdviceCard from './component/AdviceCard';
 
 function App() {
@@ -8,11 +7,12 @@ function App() {
 
   const fetchRandomAdvice = () => {
     setLoading(true);
-    fetch('https://api.adviceslip.com/advice').then(res =>
-      res.json().then(data => {
-        setAdvice(data.slip);
-        setLoading(false);
-      })
+    fetch('https://api.adviceslip.com/advice', { cache: 'no-store' }).then(
+      res =>
+        res.json().then(data => {
+          setAdvice(data.slip);
+          setLoading(false);
+        })
     );
   };
 
@@ -23,7 +23,7 @@ function App() {
   useEffect(fetchRandomAdvice, []);
 
   return (
-    <main className='bg-dark-blue w-full font-mono h-screen grid place-items-center p-4'>
+    <main className='bg-dark-blue w-full h-screen grid place-items-center p-4'>
       <AdviceCard
         advice={advice.advice}
         id={advice.id}
