@@ -22,8 +22,10 @@ Users should be able to:
 - Generate random advice
 
 ### Screenshot
+![advice-generator](https://user-images.githubusercontent.com/79299205/170861294-7373f20e-9780-4bd3-b3f8-4882867a4f81.JPG)
 
-![](./screenshot.jpg)
+![advice-generator-mobile](https://user-images.githubusercontent.com/79299205/170861358-3a673732-4f8e-43ae-bb1a-8b06dd09623e.JPG)
+
 
 ### Links
 
